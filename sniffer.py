@@ -19,7 +19,7 @@ def packet_callback(packet):
             source_port = packet[TCP].sport
             destination_port = packet[TCP].dport
 
-        elif UDP in packet:
+        elif  UDP in packet:
             protocol = "UDP"
             source_port = packet[UDP].sport
             destination_port = packet[UDP].dport
