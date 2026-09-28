@@ -1,6 +1,6 @@
 # Basic Network Sniffer
 
-A beginner-friendly Python network sniffer built using Scapy.
+A beginner-friendly network sniffer built with Python and Scapy. It captures network packets on an authorized network interface and displays useful packet information.
 
 ## Features
 
@@ -17,6 +17,21 @@ A beginner-friendly Python network sniffer built using Scapy.
 - Python
 - Scapy
 - Npcap
+
+## How It Works
+
+The program uses Scapy to capture packets from the network interface.
+
+For each IP packet, it extracts:
+
+- Source IP
+- Destination IP
+- Protocol
+- Source port
+- Destination port
+- Payload size
+
+The program captures 10 packets and then stops.
 
 ## Installation
 
